@@ -1,0 +1,26 @@
+import { Link } from "@remix-run/react";
+import { ReactNode } from "react";
+
+interface Props {
+  children?: ReactNode
+}
+
+const Header = (props: Props) => {
+  return (
+    <header className="sticky top-0 z-10 w-full border-border backdrop:blur bg-background">
+      <div className="container px-4 md:px-8 w-full flex h-14 items-center justify-between">
+        <Link to={'/'} prefetch="render">
+          <div className="flex items-center gap-1">
+            <img src="/public/logo-light.png" alt="home-logo" className="w-10 h-5" />
+            <h1>bim.AI</h1>
+          </div>
+        </Link>
+        <div>
+          {props.children}
+        </div>
+      </div>
+    </header>
+  )
+}
+
+export default Header;
