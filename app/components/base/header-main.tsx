@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import { ReactNode } from "react";
+import { ThemeToggle } from "../theme/theme-toggle";
 
 interface Props {
   children?: ReactNode
@@ -15,7 +16,8 @@ const Header = (props: Props) => {
             <h1>bim.AI</h1>
           </div>
         </Link>
-        <div>
+        <div className="flex items-center gap-5">
+          <ThemeToggle />
           {props.children}
         </div>
       </div>

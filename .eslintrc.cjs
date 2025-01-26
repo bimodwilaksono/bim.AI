@@ -22,7 +22,10 @@ module.exports = {
   ignorePatterns: ["!**/.server", "!**/.client"],
 
   // Base config
-  extends: ["eslint:recommended"],
+  extends: ["eslint:recommended", "prettier"],
+  rules: {
+    "indent": ["error", 2]
+  },
 
   overrides: [
     // React
