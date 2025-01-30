@@ -12,7 +12,7 @@ const Header = (props: Props) => {
       <div className="container px-4 md:px-8 w-full flex h-14 items-center justify-between">
         <Link to={'/'} prefetch="render">
           <div className="flex items-center gap-1">
-            <img src="/public/logo-light.png" alt="home-logo" className="w-10 h-5" />
+            <img src="/logo-light.png" alt="home-logo" className="w-10 h-5" />
             <h1>bim.AI</h1>
           </div>
         </Link>
