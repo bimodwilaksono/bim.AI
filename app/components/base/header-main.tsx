@@ -1,6 +1,6 @@
-import { Link } from "@remix-run/react";
-import { ReactNode } from "react";
+import { Link } from "react-router";
 import { ThemeToggle } from "../theme/theme-toggle";
+import type { ReactNode } from "react";
 
 interface Props {
   children?: ReactNode

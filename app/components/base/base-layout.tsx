@@ -1,7 +1,7 @@
-import { Meta, Links, ScrollRestoration, Scripts } from "@remix-run/react";
+import { Meta, Links, ScrollRestoration, Scripts } from "react-router";
 import clsx from "clsx";
-import { ReactNode } from "react";
 import { PreventFlashOnWrongTheme, Theme, ThemeProvider, useTheme } from "remix-themes";
+import type { ReactNode } from "react";
 
 interface Props {
   theme: Theme | null;
