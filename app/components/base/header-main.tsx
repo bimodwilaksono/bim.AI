@@ -1,9 +1,9 @@
-import { Link } from "@remix-run/react";
-import { ReactNode } from "react";
-import { ThemeToggle } from "../theme/theme-toggle";
+import { Link } from 'react-router';
+import { ThemeToggle } from '../theme/theme-toggle';
+import type { ReactNode } from 'react';
 
 interface Props {
-  children?: ReactNode
+  children?: ReactNode;
 }
 
 const Header = (props: Props) => {
@@ -22,7 +22,7 @@ const Header = (props: Props) => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

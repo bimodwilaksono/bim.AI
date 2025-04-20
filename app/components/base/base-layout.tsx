@@ -1,7 +1,7 @@
-import { Meta, Links, ScrollRestoration, Scripts } from "@remix-run/react";
-import clsx from "clsx";
-import { ReactNode } from "react";
-import { PreventFlashOnWrongTheme, Theme, ThemeProvider, useTheme } from "remix-themes";
+import { Meta, Links, ScrollRestoration, Scripts } from 'react-router';
+import clsx from 'clsx';
+import { PreventFlashOnWrongTheme, Theme, ThemeProvider, useTheme } from 'remix-themes';
+import type { ReactNode } from 'react';
 
 interface Props {
   theme: Theme | null;
@@ -13,13 +13,13 @@ export const BaseLayout = (props: Props) => {
     <ThemeProvider specifiedTheme={props.theme} themeAction="/action/theme">
       <Layout {...props} />
     </ThemeProvider>
-  )
-}
+  );
+};
 
 function Layout(props: Props) {
   const { children } = props;
 
-  const [theme] = useTheme(); 
+  const [theme] = useTheme();
   return (
     <html lang="en" className={clsx(theme)}>
       <head>
