@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from 'react-router';
 
 export default function NotFound() {
   return (
@@ -6,7 +6,9 @@ export default function NotFound() {
       <div className="p-6 rounded shadow-md text-center">
         <h1 className="text-4xl mb-4 dark:text-foreground">404 - Page Not Found</h1>
         <p className="mb-4">Sorry, the page you are looking for does not exist.</p>
-        <Link to="/" className="text-blue-500">Go back to the homepage</Link>
+        <Link to="/" className="text-blue-500">
+          Go back to the homepage
+        </Link>
       </div>
     </div>
   );
